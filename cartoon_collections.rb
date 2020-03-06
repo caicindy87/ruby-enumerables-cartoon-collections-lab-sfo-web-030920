@@ -7,14 +7,11 @@ def roll_call_dwarves(array)
 end
 
 def summon_captain_planet(array)
-  array.map do |element|
-    "#{element.capitalize}!"
-  end
+  array.map {|element| "#{element.capitalize}!"}
 end
 
 def long_planeteer_calls(array)
-  array.any? do |calls|
-    calls.length > 4
+  array.any? {|calls| calls.length > 4}
   end
 end
 
